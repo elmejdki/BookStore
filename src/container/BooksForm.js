@@ -15,7 +15,7 @@ const bookCategories = [
 
 const BooksForm = ({ createBook }) => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('All');
+  const [category, setCategory] = useState('');
 
   const handleTitleChange = event => {
     setTitle(() => event.target.value);
@@ -34,6 +34,9 @@ const BooksForm = ({ createBook }) => {
         title,
         category,
       });
+
+      setTitle('');
+      setCategory('');
     }
   };
 
