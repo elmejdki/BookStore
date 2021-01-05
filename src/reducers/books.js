@@ -1,6 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../action-types';
 
-const booksReducer = (state = [], action) => {
+export default (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [
@@ -13,5 +13,3 @@ const booksReducer = (state = [], action) => {
       return state;
   }
 };
-
-export default booksReducer;
