@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# BookStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As the name describe this project is a store for book where you can add books that you are about to read to keep track of your progress in them.
 
 ![project screenshot](https://user-images.githubusercontent.com/34653764/103720534-d971c780-4fcb-11eb-98ac-c6ddc8f736ea.png)
 
