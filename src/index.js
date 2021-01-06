@@ -5,6 +5,7 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import store from './reducers/index';
 import { createBook } from './actions/index';
+import './index.css';
 
 const intialState = [
   {
