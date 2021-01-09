@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
 import { bookCategories } from '../helpers/index';
+import './BooksForm.css';
 
 const BooksForm = ({ createBook }) => {
   const [title, setTitle] = useState('');
@@ -32,21 +33,24 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <form>
-      <div className="input-group">
+    <div className="form-container">
+      <h3>ADD NEW BOOK</h3>
+      <form className="form">
         <input
           type="text"
+          placeholder="Book Title"
+          className="title-input"
           value={title}
           onChange={handleTitleChange}
         />
-      </div>
-      <div className="input-group">
         <select
+          placeholder="Category"
+          className="select-input"
           value={category}
           onChange={handleCategoryChange}
         >
           <option value="">
-            none
+            Category
           </option>
           {
             bookCategories.map(category => (
@@ -56,14 +60,15 @@ const BooksForm = ({ createBook }) => {
             ))
           }
         </select>
-      </div>
-      <button
-        type="button"
-        onClick={handleSubmit}
-      >
-        Submit
-      </button>
-    </form>
+        <button
+          className="button"
+          type="button"
+          onClick={handleSubmit}
+        >
+          ADD BOOK
+        </button>
+      </form>
+    </div>
   );
 };
 
