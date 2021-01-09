@@ -1,0 +1,29 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.books-container {
+  margin-top: 30px;
+  height: calc(100vh - 420px);
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.books-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.books-container::-webkit-scrollbar-track {
+  background: rgba(204, 204, 204, 0.384);
+}
+
+.books-container::-webkit-scrollbar-thumb {
+  background: #54a9f3;
+}
+
+.books-container::-webkit-scrollbar-thumb:hover {
+  background: #4386bf;
+}
